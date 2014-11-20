@@ -24,3 +24,11 @@ fork the spree repository and merge your changes there, or that you create an ex
 that contains the changes you need for the specific branch.
 
 _todo_ link to documentation on how to make that happen.
+
+
+# IDEA
+
+* rename the version branches to -edge instead of -stable.
+* set release cycle for minor releases, ie 2 weeks.
+* release a minor in every cycle if changes are made to the supported branches.
+* release ad-hoc with security fixes for the supported version branches.
