@@ -35,5 +35,7 @@ The readme on spree/spree.
 
 ## Spree API documentation
 
+not the REST api, the 'public interface', how things work.
+
 * RDoc generated (when we have that)
 * Narrated (developer focused) guides for complex parts, like checkout flow, reimbursement, shipping etc
