@@ -25,3 +25,13 @@ You can find all the release on the [RubyGems version page for Spree](http://rub
 ### Ad-hoc releases
 
 With security issues, it could be needed to release a patch version outside of the cycle. When needed we will release security patches ad-hoc with a new patch release.
+
+## What's included in every release
+
+Every release will have the following:
+
+* a changelog describing what has changed,
+* an upgrade guide with detailed step by step documentation on how to upgrade,
+* a tag in the github repository with the corresponding version,
+* a release in the github repository linking the changelog and the upgrade path,
+* an entry in the rubygems
