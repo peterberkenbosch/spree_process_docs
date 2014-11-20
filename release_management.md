@@ -1,5 +1,22 @@
 # Spree's Release Management
 
+We will follow [SemVer](http://semver.org/) the best we can, we will release a
+new major release when we break the public interface.
+
+## Small releases
+
+We thrive to make the releases as small as posible so upgrading to specific
+releases are small and have clear steps. Every release will have a well documented
+upgrade path to follow.
+
+## Supported branches
+
+We support the last 3 stable branches down the current stable. This means we will actively add
+bug- and security fixes. We will *not* add new features to the stable branches. The stable branches
+are meant to be and stay stable at all cost.
+
+New features are more then welcome, but that will result in new (minor or major) releases.
+
 We strongly encourage people to upgrade to using the latest Spree releases to avoid being stuck on a release that is no longer maintained.
 
 ## Policy

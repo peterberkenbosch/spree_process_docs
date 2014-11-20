@@ -16,6 +16,10 @@ We started by applying the [Thoughtbot Styleguide](https://github.com/thoughtbot
 this will be enforced for every pull request. We use [HoundCI](https://houndci.com) for that, so when
 you violate a style rule there will be a comment on that specific line in your pull request.
 
+## CodeClimate code quality
+
+We also run [CodeClimate](https://codeclimate.com/github/spree/spree) on all pull requests, low quality code needs to be refactored before we consider accepting the pull request.
+
 ## Ruby documentation with Rdoc
 
 Comment the public api interface with Rdoc, for usage see the [Rails Documentation guidelines](http://guides.rubyonrails.org/api_documentation_guidelines.html)
