@@ -4,7 +4,7 @@ This document will describe the rules and guidelines we use to either accept or
 deny a pull request. Some rules warrant more discussion from the core team before
 it get's accepted.
 
-## 1. Don’t decorate state machine (see roadmap).
+## 1. Don’t decorate the state machine.
 ## 2. No callbacks.
 ## 3. Public API changes will need justification.
 ## 4. Limit (avoid) adding actions to controllers & models.
