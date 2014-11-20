@@ -6,9 +6,10 @@ We strongly encourage people to upgrade to using the latest Spree releases to av
 
 * Master branch receives *all* patches, including new features and breaking API changes (with deprecation warnings, if necessary).
 
-* One branch "back" from master (currently 2-4-stable) receives patches that fix all bugs, and security issues, and modifications for recently added features (for example, split shipments). No breaking API changes!
+* One branch "back" from master (currently 2-4-stable) receives patches that fix all bugs, and security issues, and modifications for recently added features (for example, split shipments).
 
-* Three branches "back" from master (currently 2-1-stable) are part of the regular release cycle.
+* We support the last 4 stable branches back from master, ie. 2-4-stable, 2-3-stable, 2-2-stable and 2-1-stable at the time of this writing. Support means that we includes those branches in the release cycle (see below).
+__todo__ timeboxed support for older versions?
 
 * Deprecation warnings are to be added in patch releases (i.e. 2.2.1) and the code being deprecated will only be removed in minor versions. For example, if a deprecation warning is added in 2.2.1, 2.2.2 will still contain the same deprecation warning but in 2.3.0 the deprecation warning and the code will be gone.
 
