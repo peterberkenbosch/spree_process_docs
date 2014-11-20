@@ -17,7 +17,7 @@ The readme on spree/spree.
 ## Develop a Spree store
 
 * Developer focused usage guide on building a store with Spree.
-* Revisit/rewrite the current documentation on guides.spreecommerce.com/developer
+* Revisit/rewrite the current documentation on the [guides](http://guides.spreecommerce.com/developer/)
 
 ## Contributing to Spree
 
