@@ -55,21 +55,56 @@ What to backport and how to backport
 
 
 ----
-Hello Contributor - welcome to Spree!
+# Spree::Process
 
-You’re here to help, great. We’re here to help you help us.
+* What’s our funnel
+* Ruby/Spree styleguide
+* PR guidelines
+* Getting involved page
+* Clean up README (spree/spree)
+* Benchmarks for performance
+* Turn on code climate for pull requests
+* HoundCI
+* Count sql queries
+* Issue/PR tagging based on subject
+* What about test guidelines
+* Expect a PR to include a failing and passing spec
+* Issues / Feature requests
+* User voice?
 
-* You have an issue, [click here](https://github.com/spree/spree/issues).
-* You want to get started, go here.
-* You want to make the API better.
-* You want to make the Admin better.
-* You want to make Core better.
+How we’ve improved the process (the blog post)
+* Better tools
+* Rules
+* …..
+* Updated Readme
+* Get in touch with us!
+* We’re moving to RDoc
+*
 
-Before you start, we’ll ask you to do a bit of reading.
+## Rules
 
-* Have a look at our contributor guidelines
-* Style issues, we’ve got your back. Have a look here.
-* Not sure what to work on? Have a peek at our roadmap.
-* Rules! We’ve got rules. We really want your help, but we’ve got some standards to uphold. Please make sure your contribution doesn’t break any of these.
+* Don’t decorate state machine (see roadmap)
+* No callbacks
+* Public API changes will need justification
+* Limit (avoid) adding actions to controllers & models
+* Performance can’t take a hit
+* No additional queries
+* Encourage removing code!
+* If it breaks other tests
+* Non-localized strings will be rejected
+* Destruction or change data
+* Avoid adding new gem dependency
+* API endpoints need to proper authentication/authorization
+* Don’t mention people in commits
 
-Phew, now that that’s out of the way, what are you waiting for? Start contributing!
+
+## Components
+
+* Admin
+* Promo
+* Returns
+* API
+* Stock/Inventory
+* Adjustments
+* Order Management
+* Checkout
