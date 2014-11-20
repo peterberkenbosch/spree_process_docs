@@ -3,6 +3,13 @@
 We will follow [SemVer](http://semver.org/) the best we can, we will release a
 new major release when we break the public interface.
 
+## IDEA
+
+* rename the version branches to -edge instead of -stable.
+* set release cycle for minor releases (ie 2 weeks?)
+* release a patch release in every cycle if changes are made to the supported branches.
+* release ad-hoc with security fixes for the supported version branches when needed.
+
 ## Small releases
 
 We thrive to make the releases as small as posible so upgrading to specific
