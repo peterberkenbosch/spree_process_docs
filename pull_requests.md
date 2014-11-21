@@ -1,7 +1,3 @@
-Spree is an open source project and we encourage contributions.  Please see the
-[contributors guidelines](http://spreecommerce.com/documentation/contributing_to_spree.html)
-before contributing.
-
 ## Pull requests
 
 We gladly accept pull requests to add documentation, fix bugs and, in some circumstances,
