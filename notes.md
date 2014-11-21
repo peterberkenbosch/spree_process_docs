@@ -78,7 +78,7 @@ How we’ve improved the process (the blog post)
 * …..
 * Updated Readme
 * Get in touch with us!
-* We’re moving to RDoc
+* We’re moving to YARD
 *
 
 ## Rules
