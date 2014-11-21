@@ -1,27 +1,18 @@
-Hello Contributor - welcome to Spree!
+# Hello Contributor - welcome to Spree!
 
 You’re here to help, great. We’re here to help you help us.
 
-* You have an issue, [click here](https://github.com/spree/spree/issues).
-* You want to get started, go here.
-* You want to make the API better.
-* You want to make the Admin better.
-* You want to make Core better.
-
 Before you start, we’ll ask you to do a bit of reading.
+You will find all you need in this book. Don't worry, it's not much :)
 
-* Have a look at our contributor guidelines
+* Contributor guidelines
 * Style issues, we’ve got your back. Have a look here.
-* Not sure what to work on? Have a peek at our roadmap.
+* Not sure what to work on?
 * Rules! We’ve got rules. We really want your help, but we’ve got some standards to uphold. Please make sure your contribution doesn’t break any of these.
 
 Phew, now that that’s out of the way, what are you waiting for? Start contributing!
 
------
-
-<!-- from readme -->
-
-In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
+## Not sure what to work on?
 
 Here are some ways **you** can contribute:
 
@@ -36,8 +27,7 @@ Here are some ways **you** can contribute:
 * by reviewing [pull requests](https://github.com/spree/spree/pulls)
 
 
------
-## What to do when my changes are not merged?
+## What to do when my changes are not accepted?
 
 Since we do not merge new features in the stable branches we suggest that you either
 fork the spree repository and merge your changes there, or that you create an extension
