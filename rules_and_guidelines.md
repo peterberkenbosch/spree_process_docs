@@ -22,8 +22,7 @@ The stable releases are named stable for a reason, let's keep it that way. Any p
 ## 10. Adding new gem dependencies.
 ## 11. API endpoints need to proper authentication/authorization
 ## 12. No more class_eval!
-Since we dropped the ruby 1.9 support on the latest Spree master, there is no more excuse not to use the Model#prepend approach.
-- todo link to sample code.
+Since we dropped the ruby 1.9 support on the latest Spree master, there is no more excuse not to use the Model#prepend approach. [Sample on extending classes](http://guides.spreecommerce.com/developer/logic.html#extending-classes)
 
 # Measure code quality and performance
 
