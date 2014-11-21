@@ -34,43 +34,9 @@ You can also search existing bug reports/issues and file a new one if you do not
 The important thing is that you communicate your intention in advance of doing a lot of work. Simple bug fixes and non-controversial changes do not require this approach but you can save some time by suggesting an improvement and having it rejected before you write a bunch of the code.
 ***
 
-### Filing an Issue
+### [Filing an Issue](filing_issue_guide.md)
 
-If you would like to file a bug report, please create an issue in our [GitHub Issues Tracker](https://github.com/spree/spree/issues). You should do a basic search of the issues database before creating a new issue to ensure that you are not creating a duplicate issue.
 
-When filing an issue on the Spree project, please provide these details:
-
-* A comprehensive list of steps to reproduce the issue.
-* What you're *expecting* to happen compared with what's *actually* happening.
-* The version of Spree *and* the version of Rails.
-* Your application's complete Gemfile, as text (*not as an image*)
-* Any relevant stack traces ("Full trace" preferred)
-
-Without this information, we may be unable to debug your issue promptly. This information is typically all that is required in order to be able to solve a problem quickly and efficiently.
-
-***
-Please do not assign labels or create new labels to your issue. We will assign the appropriate labels to ensure your ticket is handled in the appropriate manner.
-***
-
-#### When to File an Issue
-
-You should file an issue if you have found (or suspect) a bug in the "core" functionality of Spree. If you have found a bug in one of the extensions, please file an issue with the appropriate extension project in GitHub. If you're not sure if the behavior you're experiencing is intentional just ask on the mailing list and someone will encourage you to file a ticket if your issue sounds like a bug (as opposed to a feature.)
-
-#### How We Prioritize Issues
-
-Spree is a very large project with lots of activity. We try our best to respond to all of the questions and issues our users have.  We use the following criteria to prioritize issues:
-
-* Does this bug effect the latest stable release?
-* Are there details on how to reproduce the problem?
-* Is there a patch associated with the issue?
-* Is there a test included in the patch?
-* Has someone else verified the bug?
-
-We give highest priority to issues where the answer is "yes" to all of these questions. Next highest priority is for issues that answer "yes" to most of these questions, particularly the first few criteria.
-
-***
-You need to include a brief description of the problem and simple steps needed to reproduce it. If you fail to supply this minimum level of information your issue will likely be ignored.
-***
 
 #### Providing a Patch
 

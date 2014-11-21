@@ -6,8 +6,9 @@ One file to rule them all.
 
 The readme on spree/spree.
 
-* Focused on getting started with using Spree.
+* Focused on getting started with using Spree as a developer.
 * Links to all the other docs.
+* Make it smaller, add a TOC / links to all different topics.
 
 ## Adding Issue document
 
