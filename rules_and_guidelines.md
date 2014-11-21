@@ -5,8 +5,14 @@ deny a pull request. Some rules warrant more discussion from the core team befor
 it get's accepted.
 
 ## 1. Don’t decorate the state machine.
+We are moving away from the complex and low performance state machine logic. We do not accept any new changes or usages for the statemachine logic.
+
 ## 2. No callbacks.
+Similar to number 1 above, we are moving away from the heavily used callbacks to prevent the cascading touching and other low performance resulting in using these callbacks.
+
 ## 3. Public API changes will need justification.
+The stable releases are named stable for a reason, let's keep it that way. Any public API (breaking) change needs proper discussion before accepting it. We will never merge these changes in the stable branches.
+
 ## 4. Limit (avoid) adding actions to controllers & models.
 ## 5. Performance can’t take a hit.
 ## 6. No additional queries.
@@ -15,6 +21,9 @@ it get's accepted.
 ## 9. Destruction or change data.
 ## 10. Adding new gem dependencies.
 ## 11. API endpoints need to proper authentication/authorization
+## 12. No more class_eval!
+Since we dropped the ruby 1.9 support on the latest Spree master, there is no more excuse not to use the Model#prepend approach.
+- todo link to sample code.
 
 # Measure code quality and performance
 
