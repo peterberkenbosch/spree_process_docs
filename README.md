@@ -20,6 +20,6 @@ you violate a style rule there will be a comment on that specific line in your p
 
 We also run [CodeClimate](https://codeclimate.com/github/spree/spree) on all pull requests, low quality code needs to be refactored before we consider accepting the pull request.
 
-## Ruby documentation with Rdoc
+## Ruby documentation with YARD
 
-Comment the public api interface with Rdoc, for usage see the [Rails Documentation guidelines](http://guides.rubyonrails.org/api_documentation_guidelines.html)
+Comment the public api interface with YARD, for usage see the [YARD Getting Started](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) page.

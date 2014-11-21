@@ -22,8 +22,8 @@ The readme on spree/spree.
 ## Contributing to Spree
 
 * Developer focused usage guide on developing for Spree.
-* Best practises, ie class attribute setters instead of properties
-* Rdoc syntax
+* Best practises, ie class attribute setters instead of using a property
+* Yard documentation syntax
 * Style guides / quality tools
 * module prepend stuff
 * how to draft the perfect PR
@@ -32,6 +32,11 @@ The readme on spree/spree.
 
 * Documentation about how we release, what we release
 * Documentation on why we might reject PR's
+
+### Roadmap document
+
+* larger topics organized by future release.
+* show in progress mark / link to PR?
 
 ## Spree API documentation
 
