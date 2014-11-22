@@ -31,14 +31,12 @@ The #spree chat room is not monitored as carefully as the mailing list. Sometime
 You can also search existing bug reports/issues and file a new one if you do not find an issue relevant to your proposed change. See [Filing an Issue](#filing-an-issue) for more details.
 
 ***
-The important thing is that you communicate your intention in advance of doing a lot of work. Simple bug fixes and non-controversial changes do not require this approach but you can save some time by suggesting an improvement and having it rejected before you write a bunch of the code.
+_The important thing is that you communicate your intention in advance of doing a lot of work. Simple bug fixes and non-controversial changes do not require this approach but you can save some time by suggesting an improvement and having it rejected before you write a bunch of the code._
 ***
 
 ### [Filing an Issue](filing_issue_guide.md)
 
-
-
-#### Providing a Patch
+#### Providing a Pull Request
 
 If you are filing an issue and supplying a patch at the same time, please file a ["Pull Request"](#creating-a-pull-request) instead. The pull request will also create an issue at the same time but it's superior to just creating an issue because the code and issue can be linked.
 
