@@ -49,3 +49,12 @@ accept, pull requests within three business days (and, typically, one business
   * Alphabetize the class methods to keep them organized
 
   And in case we didn't emphasize it enough: we love tests!
+
+
+  ## What to do when my changes are not accepted?
+
+  Since we do not merge new features in the stable branches we suggest that you either
+  fork the spree repository and merge your changes there, or that you create an extension
+  that contains the changes you need for the specific branch.
+
+  _todo_ link to documentation on how to make that happen.
