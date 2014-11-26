@@ -28,7 +28,7 @@ Here are some ways **you** can contribute:
 
 ## Who can contribute?
 
-Spree is an open source project and as such contributions are always welcome. Our community is one which encourages involvement from all developers regardless of their ability level. We ask that you be patient with the other members of the community and maintain a respectful attitude towards other people's work. Open source is a great way to learn a new technology so don't be afraid to jump right in, even if you are new to Ruby/Rails.
+Spree is an open source project and as such contributions are always welcome. Our community is one which encourages involvement from all developers regardless of their ability level. We ask that you be patient with the other members of the community, and maintain a respectful attitude towards other people's work. Open source is a great way to learn a new technology so don't be afraid to jump right in, even if you are new to Ruby/Rails.
 
 ## Before you contribute
 
@@ -36,16 +36,16 @@ Open source projects tend to be a collaborative effort. Since many people are re
 
 ## Mailing List
 
-One of the best places for communication is the [spree-user mailing list](http://groups.google.com/group/spree-user). You can search this list of previous discussions and get a sense for whether you're trying to address something new.
+One of the best places for communication is the [spree-user mailing list](http://groups.google.com/group/spree-user). You can search this list of previous discussions, and get a sense for whether you're trying to address something new.
 
 ## IRC
 
 There is a #spree chat room on the irc.freenode.net network. Sometimes the core contributors hang out there and you can get some feedback on your idea. More information on how to connect is on our [blog](http://spreecommerce.com/blog/irc-101).
 
-Note: _The #spree chat room is not monitored as carefully as the mailing list. Sometimes you'll get lucky and someone will answer your question but we can't provide real time responses to everyone with a question/problem/idea. The mailing list is a much better way to communicate, and it gives everyone the chance to provide a thoughtful response. It's also more permanent than anything discussed on IRC._
+Note: _The #spree chat room is not monitored as carefully as the mailing list. Sometimes you'll get lucky and someone will answer your question, but we can't provide real time responses to everyone with a question/problem/idea. The mailing list is a much better way to communicate, and it gives everyone the chance to provide a thoughtful response. It's also more permanent than anything discussed on IRC._
 
 ## Feature Requests
 
-We're interested in hearing your ideas for new features but creating feature requests in the Issue Tracker is not the proper way to ask for a feature. A feature request is any idea you have to improve the software experience that is not strictly related to a bug or error of omission.
+We're interested in hearing your ideas for new features, but creating feature requests in the Issue Tracker is not the proper way to ask for a feature. A feature request is any idea you have to improve the software experience that is not strictly related to a bug or error of omission.
 
 Note: _Feature requests without accompanying code will be closed immediately. We simply cannot respond efficiently to feature requests through our Issue Tracker. If you want to suggest a feature, please use the [mailing list](http://groups.google.com/group/spree-user)._
