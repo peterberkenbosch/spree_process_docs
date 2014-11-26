@@ -1,4 +1,4 @@
-## Pull requests
+## Pull Requests
 
 We gladly accept pull requests to add documentation, fix bugs and, in some circumstances,
 add new features to Spree.
@@ -27,34 +27,98 @@ At this point you're waiting on us. We like to at least comment on, if not
 accept, pull requests within three business days (and, typically, one business
   day). We may suggest some changes or improvements or alternatives.
 
-  Some things that will increase the chance that your pull request is accepted,
-  taken straight from the Ruby on Rails guide:
-
-  * Use Rails idioms and helpers
-  * Include tests that fail without your code, and pass with it
-  * Update the documentation, the surrounding one, examples elsewhere, guides,
-  whatever is affected by your contribution
-
-  Syntax:
-
-  * Two spaces, no tabs.
-  * No trailing whitespace. Blank lines should not have any space.
-  * Prefer &&/|| over and/or.
-  * `MyClass.my_method(my_arg)` not `my_method( my_arg )` or `my_method my_arg`.
-  * `a = b` and not `a=b`.
-  * `a_method { |block| ... }` and not `a_method { | block | ... }`
-  * Follow the conventions you see used in the source already.
-  * -> symbol over lambda
-  * Ruby 1.9 hash syntax `{ key: value }` over Ruby 1.8 hash syntax `{ :key => value }`
-  * Alphabetize the class methods to keep them organized
-
   And in case we didn't emphasize it enough: we love tests!
 
 
-  ## What to do when my changes are not accepted?
+## For larger pull request create an empty PR with a todo list
 
-  Since we do not merge new features in the stable branches we suggest that you either
-  fork the spree repository and merge your changes there, or that you create an extension
-  that contains the changes you need for the specific branch.
+[task list](https://help.github.com/articles/writing-on-github/#task-lists)
 
-  _todo_ link to documentation on how to make that happen.
+## Commit messages
+
+[Provide solid and clear commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+
+## Squash, Fixup and Reword
+
+Before creating the pull request make sure you have squashed all the commits to groups of messages that are descriptive and clear what they changed.
+
+_DO_
+- "add store credits"
+- "add gift cards"
+
+_DONT_
+- "add store credits"
+- "passing specs"
+- "forgot a semi-colon"
+- "add gift cards"
+- "address pr feedback"
+
+```shell
+git checkout master
+git pull
+git checkout feature-branch
+git rebase -i master
+```
+
+Sample git rebase:
+
+```
+pick ce366eb fix typo
+pick 59f7318 remove the hub part from the build.sh
+pick eaf9993 move this decorator to the correct place again
+pick bc39345 add the api refactor to changelogs
+pick 87767cf remove the order_decorator from api and added the method in core order model
+
+# Rebase 87a9afd..87767cf onto 87a9afd
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+```
+
+To make this neat you can do something like this:
+
+```
+reword ce366eb fix typo
+fixup 59f7318 remove the hub part from the build.sh
+fixup eaf9993 move this decorator to the correct place again
+fixup bc39345 add the api refactor to changelogs
+fixup 87767cf remove the order_decorator from api and added the method in core order model
+
+# Rebase 87a9afd..87767cf onto 87a9afd
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+```
+
+The next screen will give you the ability to reword the 5 commits into one neat one.
+
+
+## What to do when my changes are not accepted?
+
+Since we do not merge new features in the stable branches we suggest that you either
+fork the spree repository and merge your changes there, or that you create an extension
+that contains the changes you need for the specific branch.
+
+_todo_ link to documentation on how to make that happen.
