@@ -1,6 +1,6 @@
 # Pull Requests
 
-We gladly accept pull requests to add documentation, fix bugs and, in some circumstances,
+We gladly accept [pull requests](https://help.github.com/articles/using-pull-requests) add documentation, fix bugs and, in some circumstances,
 add new features to Spree.
 
 Here's a quick guide:
@@ -15,7 +15,7 @@ $ bundle
 $ bundle exec rake
 ```
 
-3. Create new feature branch then make changes and add tests for your changes. Only
+3. Create a new [topic branch](#topic_branches) then make changes and add tests for your changes. Only
 refactoring and documentation changes require no new tests. If you are adding
 functionality or fixing a bug, we need tests!
 
@@ -32,11 +32,31 @@ We may suggest some changes or improvements or alternatives.
 
 Make sure you address all the (automatic) feedback on your commits.
 
+## Topic Branches
+
+Git branches are "cheap." Creating branches in Git is incredibly easy and it's an ideal way to isolate a specific set of changes. By keeping a specific set of changes isolated, it will help us to navigate your fork and apply only the changes we're interested in. You should create a clean branch based on the latest spree/master when doing this. It is important you follow these steps exactly, it will prevent you from accidentally including unrelated changes from your local repository into the branch.
+
+For example, if we were submitting a patch to fix an issue with the CSS in the flash error message you could create a branch as follows:
+
+```shell
+$ git remote add upstream git://github.com/spree/spree.git
+$ git fetch upstream
+$ git checkout -b fix-css-for-error-flash --track upstream/master
+```
+
+The fetch command will grab all of the latest commits from the Spree master branch. Don't worry, it doesn't permanently alter your working repository and you can return to your master branch later. The track part of the command will tell git that this branch should track with the remote version of the upstream master.  This is another way of saying that the branch should be based on a clean copy of the latest official source code (without any of your unrelated local changes.)
+
+You can then do work locally on this topic branch and push it up to your GitHub fork when you are done. So in our previous example we do something like:
+
+```shell
+$ git push origin fix-css-for-error-flash
+```
+
 ## Commit messages
 
 [Provide solid and clear commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) so we can read from the commit what is fixed or added in this specific pull request.
 
-When developing in the feature branch it's a best practise to commit a lot with small changes, however some of those commit messages are noise the moment they turn into a pull request. You should rebase and squash the noise commits. For example:
+When developing in the topic branch it's a best practise to commit a lot with small changes, however some of those commit messages are noise the moment they turn into a pull request. You should rebase and squash the noise commits. For example:
 
 ```
 - "add store credits"
@@ -53,7 +73,7 @@ Rebase and squash this into:
 - "add gift cards"
 ```
 
-When you are done your work in the feature branch, rebase the feature branch against master (or the stable branch you've forked from)
+When you are done your work in the topic branch, rebase the topic branch against master (or the stable branch you've forked from)
 
 Sample git rebase:
 
@@ -63,7 +83,6 @@ git pull --rebase upstream/master
 git checkout feature-branch
 git rebase -i master
 ```
-NB. this assumes you have the original forked repository configured as an upstream remote. See more about that [here](https://help.github.com/articles/fork-a-repo/#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository).
 
 This will show you this next screen:
 

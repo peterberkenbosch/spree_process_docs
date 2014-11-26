@@ -90,73 +90,8 @@ Thanks to [GitHub](https://github.com/), however, you do not have to wait for a 
 See the GitHub guide on [creating forks](https://help.github.com/articles/fork-a-repo) for more details.
 ***
 
-#### Topic Branches
 
-Git branches are "cheap." Creating branches in Git is incredibly easy and it's an ideal way to isolate a specific set of changes. By keeping a specific set of changes isolated, it will help us to navigate your fork and apply only the changes we're interested in. You should create a clean branch based on the latest spree/master when doing this. It is important you follow these steps exactly, it will prevent you from accidentally including unrelated changes from your local repository into the branch.
 
-For example, if we were submitting a patch to fix an issue with the CSS in the flash error message you could create a branch as follows:
-
-```bash
-$ git remote add upstream git://github.com/spree/spree.git
-$ git fetch upstream
-$ git checkout -b fix-css-for-error-flash --track upstream/master
-```
-
-The fetch command will grab all of the latest commits from the Spree master branch. Don't worry, it doesn't permanently alter your working repository and you can return to your master branch later. The track part of the command will tell git that this branch should track with the remote version of the upstream master.  This is another way of saying that the branch should be based on a clean copy of the latest official source code (without any of your unrelated local changes.)
-
-You can then do work locally on this topic branch and push it up to your GitHub fork when you are done. So in our previous example we do something like:
-
-```bash
-$ git push origin fix-css-for-error-flash
-```
-
-Of course if you want the fix for yourself to use in your own local code you should probably merge it down to your own personal master branch that you're using for development
-
-```bash
-$ git checkout master
-$ git merge fix-css-for-error-flash
-```
-
-You should probably also clean up after yourself a little. The branch has been pushed to GitHub and you've merged it locally so you don't really need a local copy of the branch laying around.
-
-```bash
-$ git branch -D fix-css-for-error-flash
-```
-
-#### Follow the Coding Conventions
-
-Spree follows a simple set of coding style conventions.
-
-* Two spaces, no tabs.
-* No trailing whitespace. Blank lines should not have any space.
-* Indent after private/protected.
-* Prefer `&&`/`||` over `and`/`or`.
-* Prefer class << self block over self.method for class methods.
-* `my_method(my_arg)` not `my_method( my_arg )` or `my_method my_arg`.
-* `a = b` and not `a=b`.
-* `{ a + b }` and not `{a + b}`
-* -> symbol over lambda
-* Ruby 1.9 hash syntax { key: :value } over Ruby 1.8 hash syntax { :key => :value }
-* Alphabetize the class methods to keep them organized.
-* Follow the conventions you see used in the source already.
-
-These are some guidelines and please use your best judgment in using them.
-
-#### Including a Test
-
-Ideally your pull request will also include a test that verifies a bug (or the absence of the new feature) before your fix and also verifies proper functionality when you are finished. Please read the [Testing Guide](testing) for more information on writing and running your tests.
-
-***
-Pull requests with tests are given top priority. Failure to include a test will likely delay acceptance of your patch.
-***
-
-#### Creating the Pull Request
-
-Once your code is ready to go and you have pushed your [topic branch](#topic-branches) to GitHub then you are ready to create the pull request and notify the Spree team that your contribution is ready. You do this by browsing your project in GitHub and changing to the topic branch you just pushed. Once you are on the topic branch simply create a pull request by pressing the "Pull Request" button.
-
-***
-The GitHub guide on [pull requests](https://help.github.com/articles/using-pull-requests) describes this in more detail with screenshots if you're still confused on this part.
-***
 
 ### Contributing to the Documentation
 
