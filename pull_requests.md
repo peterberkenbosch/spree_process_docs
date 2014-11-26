@@ -63,6 +63,7 @@ git pull --rebase upstream/master
 git checkout feature-branch
 git rebase -i master
 ```
+NB. this assumes you have the original forked repository configured as an upstream remote. See more about that [here](https://help.github.com/articles/fork-a-repo/#step-3-configure-git-to-sync-your-fork-with-the-original-spoon-knife-repository).
 
 This will show you this next screen:
 
