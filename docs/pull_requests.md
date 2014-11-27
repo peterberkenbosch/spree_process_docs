@@ -1,6 +1,6 @@
 # Pull Requests
 
-We gladly accept [pull requests](https://help.github.com/articles/using-pull-requests) add documentation, fix bugs and, in some circumstances,
+We gladly accept [pull requests](https://help.github.com/articles/using-pull-requests) that add documentation, fix bugs and, in some circumstances,
 add new features to Spree.
 
 Here's a quick guide:
